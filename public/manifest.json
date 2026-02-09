@@ -1,0 +1,26 @@
+{
+  "name": "IDS SmartTech - Identity & Access Solutions",
+  "short_name": "IDS SmartTech",
+  "description": "Cutting-edge identity management, biometric authentication, RFID solutions, IoT systems, and robotics for government and enterprise.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "technology", "security"],
+  "lang": "en-IN"
+}

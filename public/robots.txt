@@ -1,0 +1,24 @@
+# Robots.txt for IDS SmartTech
+# https://idssmarttech.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://idssmarttech.com/sitemap.xml
+
+# Disallow admin and private paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow search engines to crawl important pages
+Allow: /products
+Allow: /solutions/*
+Allow: /company
+Allow: /contact
+Allow: /team
+Allow: /governance
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
