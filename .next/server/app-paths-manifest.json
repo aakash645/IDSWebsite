@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/solutions/biometric-authentication/page": "app/solutions/biometric-authentication/page.js",
+  "/solutions/rfid-smart-card/page": "app/solutions/rfid-smart-card/page.js",
+  "/solutions/visitor-management/page": "app/solutions/visitor-management/page.js",
+  "/solutions/role-based-access/page": "app/solutions/role-based-access/page.js",
+  "/(company)/contact/page": "app/(company)/contact/page.js"
+}
