@@ -16,21 +16,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/solutions/biometric-authentication/page.js"
     ],
-    "/solutions/rfid-smart-card/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/solutions/rfid-smart-card/page.js"
-    ],
-    "/solutions/visitor-management/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/solutions/visitor-management/page.js"
-    ],
-    "/solutions/role-based-access/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/solutions/role-based-access/page.js"
-    ],
     "/(company)/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

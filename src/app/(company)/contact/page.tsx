@@ -27,16 +27,16 @@ const FAQItem = ({ question, answer }: FAQItemProps) => {
 // Office Locations Data with coordinates for map
 const officeLocations = [
   { 
-    name: "ID SmartTech HQ",
-    address: "B-45, Sector 63, Noida, Uttar Pradesh 201301",
+    name: "IDSID Pvt Ltd. HQ",
+    address: "BIZHUB, A101, Pimpri Chowk, Pune, Maharashtra - 411018",
     phone: "+91 120 4567890",
     hours: "9:00 AM - 6:00 PM",
     status: "open",
     rating: 4.8,
     reviews: 124,
-    lat: 28.6279,
-    lng: 77.3749,
-    mapQuery: "Sector 63, Noida, Uttar Pradesh"
+    lat: 20.4071,
+    lng: 75.3845,
+    mapQuery: "BIZHUB, A101, Pimpri Chowk, Pune, Maharashtra"
   },
   { 
     name: "Delhi Sales Office",
