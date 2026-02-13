@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Twitter, Linkedin, Facebook, Instagram, Mail, MapPin } from 'lucide-react';
+import { Twitter, Linkedin, Facebook, Instagram, Mail, MapPin, PhoneCall } from 'lucide-react';
 import { Logo } from '@/components/ui';
 
 export const Footer = () => {
@@ -100,7 +100,7 @@ export const Footer = () => {
               {/* Contact Section */}
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-secondary hover:bg-card-hover transition-colors border border-border group cursor-pointer">
-                  <div className="bg-highlight/10 p-2.5 rounded-xl text-highlight group-hover:bg-highlight group-hover:text-highlight-foreground transition-colors"><Mail size={20} /></div>
+                  <div className="bg-highlight/10 p-2.5 rounded-xl text-highlight group-hover:bg-highlight group-hover:text-highlight-foreground transition-colors"><PhoneCall size={20} /></div>
                   <div>
                     <p className="text-xs text-foreground-muted font-bold uppercase mb-1">Call us</p>
                     <p className="text-foreground font-medium text-sm leading-relaxed">
