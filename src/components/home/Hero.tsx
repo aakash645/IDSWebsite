@@ -75,7 +75,7 @@ export const Hero = () => {
             </p>
             
             <a
-              href="https://go.keka.com/attendance-management-software-india?utm_source=paidsearch&utm_campaign=GS_Attendance_India&utm_medium=google&utm_content=&utm_term=attendance%20marking%20system&hsa_acc=2719990364&hsa_cam=21025353964&hsa_grp=184919522347&hsa_ad=761638300479&hsa_src=g&hsa_tgt=kwd-307083052541&hsa_kw=attendance%20marking%20system&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=21025353964&gbraid=0AAAAADM0n9SPExZp5fLVBsU0CKULK31k7&gclid=Cj0KCQiAjJTKBhCjARIsAIMC44-XRk91OpIus3JKQvih-8h0PSPdV6TO8PpUJBM_9DUsTFpTfcWj6wAaAqyAEALw_wcB"
+              href="tel:+917276680893"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-card text-foreground font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-full hover:bg-primary transition-all duration-300 group text-sm md:text-base"
