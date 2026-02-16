@@ -78,11 +78,73 @@ const officeLocations = [
 
 export default function ContactPage() {
   const [selectedOffice, setSelectedOffice] = useState(0);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [formStatus, setFormStatus] = useState<{ type: 'idle' | 'loading' | 'success' | 'error', message: string }>({ type: 'idle', message: '' });
   const mapRef = useRef<HTMLIFrameElement>(null);
 
   // Get the map embed URL for the selected office
   const getMapEmbedUrl = (office: typeof officeLocations[0]) => {
     return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50000!2d${office.lng}!3d${office.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s${encodeURIComponent(office.mapQuery)}!5e0!3m2!1sen!2sin!4v1640000000000!5m2!1sen!2sin`;
+  };
+
+  // Handle form input changes
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.message) {
+      setFormStatus({ type: 'error', message: 'Please fill in all fields' });
+      return;
+    }
+
+    setFormStatus({ type: 'loading', message: 'Sending your message...' });
+
+    try {
+      // Get the API endpoint - check if running on server or client
+      const apiUrl = typeof window !== 'undefined' 
+        ? `http://localhost:5001/api/contact`
+        : 'http://localhost:5001/api/contact';
+
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setFormStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully. We\'ll be in touch soon!' });
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+        
+        // Clear status message after 5 seconds
+        setTimeout(() => {
+          setFormStatus({ type: 'idle', message: '' });
+        }, 5000);
+      } else {
+        setFormStatus({ type: 'error', message: data.error || 'Failed to send message. Please try again.' });
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setFormStatus({ type: 'error', message: 'Network error. Please check if the backend server is running on port 5000.' });
+    }
   };
 
   return (
@@ -298,35 +360,90 @@ export default function ContactPage() {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
                 
                 <h3 className="text-2xl font-bold mb-6 relative z-10 text-foreground">Send us a Message</h3>
-                <form className="space-y-6 relative z-10">
+                <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+                  {/* Status Message */}
+                  {formStatus.message && (
+                    <div className={`p-4 rounded-lg font-medium text-sm ${
+                      formStatus.type === 'success' ? 'bg-green-50 border border-green-200 text-green-800' :
+                      formStatus.type === 'error' ? 'bg-red-50 border border-red-200 text-red-800' :
+                      'bg-blue-50 border border-blue-200 text-blue-800'
+                    }`}>
+                      {formStatus.message}
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-foreground-secondary uppercase tracking-wide">First Name</label>
-                      <input type="text" className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Jane" />
+                      <input 
+                        type="text" 
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" 
+                        placeholder="Jane" 
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-foreground-secondary uppercase tracking-wide">Last Name</label>
-                      <input type="text" className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Doe" />
+                      <input 
+                        type="text" 
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" 
+                        placeholder="Doe" 
+                        required
+                      />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-foreground-secondary uppercase tracking-wide">Email Address</label>
-                    <input type="email" className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="jane@company.com" />
+                    <input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" 
+                      placeholder="jane@company.com" 
+                      required
+                    />
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-foreground-secondary uppercase tracking-wide">Phone Number</label>
-                    <input type="tel" className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="+91 98765 43210" />
+                    <input 
+                      type="tel" 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" 
+                      placeholder="+91 98765 43210" 
+                      required
+                    />
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-foreground-secondary uppercase tracking-wide">Message</label>
-                    <textarea rows={4} className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none" placeholder="Tell us about your project..."></textarea>
+                    <textarea 
+                      name="message"
+                      rows={4} 
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none" 
+                      placeholder="Tell us about your project..." 
+                      required
+                    />
                   </div>
 
-                  <button type="button" className="w-full bg-gradient-to-r from-[#9cd0ec] via-[#fed356] to-[#ee6d31] hover:opacity-90 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 transform active:scale-95 shadow-lg">
-                    Send Message <Send size={18} />
+                  <button 
+                    type="submit" 
+                    disabled={formStatus.type === 'loading'}
+                    className="w-full bg-gradient-to-r from-[#9cd0ec] via-[#fed356] to-[#ee6d31] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 transform active:scale-95 shadow-lg"
+                  >
+                    {formStatus.type === 'loading' ? 'Sending...' : 'Send Message'} <Send size={18} />
                   </button>
                 </form>
               </div>
