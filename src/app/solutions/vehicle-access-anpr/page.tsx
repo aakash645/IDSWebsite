@@ -28,7 +28,7 @@ export default function VehicleAccessANPRPage() {
 
           <main className="w-full lg:w-3/4 order-1 lg:order-2">
             <FadeIn>
-              <SolutionHero title={pageTitle} image="https://images.unsplash.com/photo-1590504805596-27483de7e39e?q=80&w=2070&auto=format&fit=crop" />
+              <SolutionHero title={pageTitle} image="https://images.unsplash.com/photo-1565043666747-69f6646db940?q=80&w=2074&auto=format&fit=crop" />
 
               <div className="prose prose-invert prose-lg max-w-none mb-12">
                 <p className="lead text-2xl text-gray-300 font-light leading-relaxed">
