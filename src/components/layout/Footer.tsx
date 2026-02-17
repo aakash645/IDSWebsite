@@ -3,6 +3,27 @@ import { Twitter, Linkedin, Facebook, Instagram, Mail, MapPin, PhoneCall } from 
 import { Logo } from '@/components/ui';
 
 export const Footer = () => {
+
+  const socialLinks = [
+  {
+    icon: Twitter,
+    url: "https://twitter.com/idsmarttech",
+  },
+  {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/akhilesh-kumar-gupta-662b285/",
+  },
+  {
+    icon: Facebook,
+    url: "https://facebook.com/idsmarttech",
+  },
+  {
+    icon: Instagram,
+    url: "https://instagram.com/idsmarttech",
+  },
+];
+
+
   return (
     <footer className="bg-[#e8f4fa] text-foreground pt-16 pb-10 relative overflow-hidden">
       {/* Background Text Overlay */}
@@ -42,13 +63,31 @@ export const Footer = () => {
             <p className="text-foreground-secondary text-sm leading-relaxed max-w-sm">
               We engineer the systems that power modern enterprises. From biometric security to autonomous logistics and digital governance, IDS SmartTech is the partner for your digital transformation.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               {[Twitter, Linkedin, Facebook, Instagram].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-ids-yellow hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300 text-foreground-muted border border-border">
                   <Icon size={18} />
                 </a>
               ))}
-            </div>
+            </div> */}
+            <div className="flex gap-4">
+  {socialLinks.map((item, i) => {
+    const Icon = item.icon;
+    return (
+      <a
+        key={i}
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Social Media Link"
+        className="w-10 h-10 rounded-full bg-ids-yellow hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300 text-foreground-muted border border-border"
+      >
+        <Icon size={18} />
+      </a>
+    );
+  })}
+</div>
+
           </div>
           
           {/* Links Column 1 */}
