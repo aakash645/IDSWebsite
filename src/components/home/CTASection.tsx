@@ -68,7 +68,7 @@ export const CTASection = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
-                    href="https://go.keka.com/attendance-management-software-india"
+                    href="tel:+91 72766 80893 "
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white text-foreground font-poppins font-bold text-base px-8 py-4 rounded-full hover:bg-white/90 transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2"

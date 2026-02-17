@@ -170,7 +170,7 @@ export default function BiometricAuthenticationPage() {
                   className="flex flex-wrap gap-4"
                 >
                   <a 
-                    href="https://go.keka.com/attendance-management-software-india"
+                    href="tel:+91 72766 80893"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-ids-blue hover:text-white transition-all group"
@@ -435,7 +435,7 @@ export default function BiometricAuthenticationPage() {
                   <motion.a 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://go.keka.com/attendance-management-software-india"
+                    href="tel:+917276680893"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-full hover:bg-ids-blue hover:text-white transition-all"
