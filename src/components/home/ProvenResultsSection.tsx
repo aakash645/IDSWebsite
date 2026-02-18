@@ -30,7 +30,7 @@ const caseStudies = [
     industry: 'ENTERPRISE',
     title: 'Digitize Your Township with IDS Township Software',
     description: 'Complete residential community platform for gated societies. Manage residents, vehicles, billing, and security from one dashboard.',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
     link: '/solutions/tms',
   },
 ];
