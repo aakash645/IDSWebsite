@@ -344,13 +344,13 @@ export default function ContactPage() {
                   <Mail className="text-primary mb-4" size={24} />
                   <h3 className="font-bold text-lg mb-1 text-foreground">Sales Inquiry</h3>
                   <p className="text-sm text-foreground-secondary mb-2">For enterprise licensing & partnerships</p>
-                  <a href="mailto:sales@idssmarttech.com" className="text-primary text-sm font-bold hover:underline">sales@idssmarttech.com</a>
+                  <a href="mailto:akhilesh@idsmartindia.com" className="text-primary text-sm font-bold hover:underline">akhilesh@idsmartindia.com</a>
                 </div>
                 <div className="bg-card border border-border p-6 rounded-2xl hover:border-accent/50 transition-colors group shadow-sm">
                   <MessageCircle className="text-accent mb-4" size={24} />
                   <h3 className="font-bold text-lg mb-1 text-foreground">Technical Support</h3>
                   <p className="text-sm text-foreground-secondary mb-2">For existing clients & troubleshooting</p>
-                  <a href="mailto:support@idssmarttech.com" className="text-accent text-sm font-bold hover:underline">support@idssmarttech.com</a>
+                  <a href="mailto:idsidag@gmail.com" className="text-accent text-sm font-bold hover:underline">idsidag@gmail.com</a>
                 </div>
               </div>
             </FadeIn>
