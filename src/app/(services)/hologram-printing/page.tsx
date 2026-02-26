@@ -49,8 +49,9 @@ export default function HologramPrintingPage() {
               </p>
 
               <div className="flex justify-center gap-4">
-                <button className="px-8 py-3 bg-purple-500 hover:bg-purple-400 text-white font-bold rounded-full transition-all"><Link href='/products'>
-                  View Products</Link>
+                <button className="px-8 py-3 bg-purple-500 hover:bg-purple-400 text-white font-bold rounded-full transition-all">
+                  <Link href='/products'/>
+                  View Products
                 </button>
                 <Link href="/contact" className="px-8 py-3 bg-white/10 border border-white/20 hover:bg-white/20 text-white font-bold rounded-full transition-colors">
                   Get Samples
