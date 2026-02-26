@@ -6,7 +6,7 @@ export const Logo = ({ className = "" }: { className?: string }) => {
     <div className={`flex items-center ${className}`}>
       <Image
         src={LogoImage}
-        alt="IDS SmartTech Logo"
+        alt="ID SmartTech Logo"
         width={150}
         height={50}
         className="h-12 w-auto object-contain"

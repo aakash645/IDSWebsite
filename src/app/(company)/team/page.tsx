@@ -47,7 +47,7 @@ const managementTeam: TeamMemberWithImageProps[] = [
     name: "Lakshman Narayan",
     role: "Chief Strategic Director",
     img:ManagementTeam3 ,
-    bio: "Visionary leader with 25+ years in identity solutions. Spearheading IDS SmartTech's growth and innovation strategy."
+    bio: "Visionary leader with 25+ years in identity solutions. Spearheading ID SmartTech's growth and innovation strategy."
   },
   {
     name: "Akhilesh Gupta",
@@ -119,7 +119,7 @@ export default function TeamPage() {
             <div className="mb-16">
               <span className="text-accent font-bold tracking-widest uppercase text-sm mb-2 block">Leadership</span>
               <h2 className="text-4xl font-bold text-foreground">Management Team</h2>
-              <p className="text-foreground-secondary mt-4 max-w-2xl">The strategic minds steering IDS SmartTech towards innovation and excellence.</p>
+              <p className="text-foreground-secondary mt-4 max-w-2xl">The strategic minds steering ID SmartTech towards innovation and excellence.</p>
             </div>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

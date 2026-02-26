@@ -7,7 +7,7 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "Working with IDS SmartTech gave us back valuable time, reduced expenses, and simplified everything. Their team understood our challenges from day one and delivered solutions that truly work.",
+    quote: "Working with ID SmartTech gave us back valuable time, reduced expenses, and simplified everything. Their team understood our challenges from day one and delivered solutions that truly work.",
     name: 'Rajesh Kumar',
     role: 'CTO, State Transport Authority',
     initials: 'RK',
@@ -35,7 +35,7 @@ const testimonials = [
   },
   {
     id: 5,
-    quote: "IDS SmartTech gave us clarity when we needed it most—and results that exceeded expectations. Their team's dedication to our success was evident throughout the project.",
+    quote: "ID SmartTech gave us clarity when we needed it most—and results that exceeded expectations. Their team's dedication to our success was evident throughout the project.",
     name: 'Vikram Singh',
     role: 'Operations Head, Logistics Co',
     initials: 'VS',

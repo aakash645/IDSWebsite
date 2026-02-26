@@ -32,7 +32,7 @@ export default function UVPrintingPage() {
 
               <div className="prose prose-invert prose-lg max-w-none mb-12">
                 <p className="lead text-2xl text-gray-300 font-light leading-relaxed">
-                  IDS SmartTech delivers cutting-edge <strong>{pageTitle}</strong> solutions.
+                  ID SmartTech delivers cutting-edge <strong>{pageTitle}</strong> solutions.
                 </p>
                 <p className="text-gray-400">Our enterprise-grade implementation ensures scalability and security.</p>
               </div>

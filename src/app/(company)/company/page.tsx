@@ -41,7 +41,7 @@ export default function CompanyPage() {
               <span className="text-foreground font-semibold text-sm tracking-widest uppercase">About Us</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight tracking-tighter">
-              We are <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9cd0ec] via-[#fed356] to-[#ee6d31]">IDS SmartTech</span>
+              We are <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9cd0ec] via-[#fed356] to-[#ee6d31]">ID SmartTech</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground-secondary max-w-3xl mx-auto font-light leading-relaxed mb-10">
               Architecting the secure digital infrastructure for the world&apos;s most forward-thinking enterprises. We don&apos;t just build technology; we build trust.
@@ -90,7 +90,7 @@ export default function CompanyPage() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-foreground">Pioneering Trust in a <br/>Digital World</h2>
             <div className="space-y-6 text-foreground-secondary text-lg leading-relaxed">
               <p>
-                Founded in 2009, IDS SmartTech began with a singular mission: to bridge the gap between physical security and digital identity. What started as a small consultancy has evolved into a global powerhouse for IoT and Access Management solutions.
+                Founded in 2009, ID SmartTech began with a singular mission: to bridge the gap between physical security and digital identity. What started as a small consultancy has evolved into a global powerhouse for IoT and Access Management solutions.
               </p>
               <p>
                 We look beyond the immediate problem to understand the broader context of your business. By combining deep technical expertise with strategic foresight, we create solutions that are not only effective today but scalable for tomorrow.
@@ -195,7 +195,7 @@ export default function CompanyPage() {
                 { year: "2024", title: "Global Expansion", desc: "Opened new HQs in London and Singapore." },
                 { year: "2020", title: "AI Integration", desc: "Launched our proprietary AI-driven security platform." },
                 { year: "2015", title: "First Patent", desc: "Awarded patent for Holographic Security Labels." },
-                { year: "2009", title: "Inception", desc: "IDS SmartTech founded with a team of 3 engineers." }
+                { year: "2009", title: "Inception", desc: "ID SmartTech founded with a team of 3 engineers." }
               ].map((event, i) => (
                 <FadeIn key={i} delay={i * 100} direction="left">
                   <div className="relative">

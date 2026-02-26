@@ -63,7 +63,7 @@ export const CTASection = () => {
                 </h2>
                 
                 <p className="text-base md:text-lg text-black/90 mb-8 max-w-lg font-poppins font-light drop-shadow-sm">
-                  Join 500+ enterprises leveraging IDS SmartTech for next-gen identity, IoT, and robotic solutions across India.
+                  Join 500+ enterprises leveraging ID SmartTech for next-gen identity, IoT, and robotic solutions across India.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">

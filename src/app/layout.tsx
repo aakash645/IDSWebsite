@@ -15,10 +15,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://idssmarttech.com'),
   title: {
-    default: 'IDS SmartTech - Identity & Access Solutions | Biometrics, IoT & Robotics',
-    template: '%s | IDS SmartTech'
+    default: 'ID SmartTech - Identity & Access Solutions | Biometrics, IoT & Robotics',
+    template: '%s | ID SmartTech'
   },
-  description: 'IDS SmartTech delivers cutting-edge identity management, biometric authentication, RFID solutions, IoT systems, and robotics for government and enterprise. Trusted by 500+ organizations across India.',
+  description: 'ID SmartTech delivers cutting-edge identity management, biometric authentication, RFID solutions, IoT systems, and robotics for government and enterprise. Trusted by 500+ organizations across India.',
   keywords: [
     'identity management',
     'access control',
@@ -35,12 +35,12 @@ export const metadata: Metadata = {
     'face recognition',
     'card printing',
     'security solutions',
-    'IDS SmartTech',
+    'ID SmartTech',
     'India'
   ],
-  authors: [{ name: 'IDS SmartTech', url: 'https://idssmarttech.com' }],
-  creator: 'IDS SmartTech',
-  publisher: 'IDS SmartTech',
+  authors: [{ name: 'ID SmartTech', url: 'https://idssmarttech.com' }],
+  creator: 'ID SmartTech',
+  publisher: 'ID SmartTech',
   robots: {
     index: true,
     follow: true,
@@ -64,24 +64,24 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: 'IDS SmartTech - Identity & Access Solutions',
+    title: 'ID SmartTech - Identity & Access Solutions',
     description: 'Architecting the secure digital infrastructure for forward-thinking enterprises. Biometric systems, RFID, IoT, and robotics solutions.',
     type: 'website',
     locale: 'en_IN',
     url: 'https://idssmarttech.com',
-    siteName: 'IDS SmartTech',
+    siteName: 'ID SmartTech',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'IDS SmartTech - Identity & Access Solutions',
+        alt: 'ID SmartTech - Identity & Access Solutions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'IDS SmartTech - Identity & Access Solutions',
+    title: 'ID SmartTech - Identity & Access Solutions',
     description: 'Architecting the secure digital infrastructure for forward-thinking enterprises.',
     images: ['/og-image.png'],
     creator: '@idssmarttech',

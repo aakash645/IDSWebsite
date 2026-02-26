@@ -269,7 +269,7 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     name: 'Company',
     path: '/company',
-    description: 'Learn about IDS SmartTech, our mission, and our team.',
+    description: 'Learn about ID SmartTech, our mission, and our team.',
     icon: 'Users',
     megaMenu: [
       {

@@ -23,7 +23,7 @@ function getPageTitle(pathname: string): string {
 
 export function DynamicTitle() {
   const pathname = usePathname();
-  const defaultTitle = `${getPageTitle(pathname)} | IDS SmartTech`;
+  const defaultTitle = `${getPageTitle(pathname)} | ID SmartTech`;
   const lastTitle = useRef<string>(defaultTitle);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export function DynamicTitle() {
   useEffect(() => {
     const handleVisibility = () => {
       if (document.hidden) {
-        document.title = `Come Back | IDS SmartTech`;
+        document.title = `Come Back | ID SmartTech`;
       } else {
         document.title = lastTitle.current;
       }

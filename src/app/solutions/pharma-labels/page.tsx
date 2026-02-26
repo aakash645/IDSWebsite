@@ -35,7 +35,7 @@ export default function PharmaLabelsPage() {
 
               <div className="prose prose-invert prose-lg max-w-none mb-12">
                 <p className="lead text-2xl text-gray-300 font-light leading-relaxed">
-                  IDS SmartTech delivers cutting-edge <strong>{pageTitle}</strong> solutions designed to optimize your {parentService} infrastructure.
+                  ID SmartTech delivers cutting-edge <strong>{pageTitle}</strong> solutions designed to optimize your {parentService} infrastructure.
                 </p>
                 <p className="text-gray-400">
                   Our enterprise-grade implementation ensures scalability, security, and operational excellence.

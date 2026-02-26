@@ -13,7 +13,7 @@ import {
   Heart, Eye, Cloud, Database
 } from 'lucide-react';
 
-// Daily Deals Featured Products - IDS SmartTech Products
+// Daily Deals Featured Products - ID SmartTech Products
 const dailyDeals = [
   {
     id: "facegate-pro",
@@ -74,7 +74,7 @@ const promoCards = [
   }
 ];
 
-// All Products Data - IDS SmartTech Products
+// All Products Data - ID SmartTech Products
 const allProducts = [
   // Smart Cards & Credentials
   { 

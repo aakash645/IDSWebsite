@@ -164,7 +164,7 @@ export const OurApproachSection = () => {
             Access Control & <span className=" font-bold font-poppins text-transparent bg-clip-text bg-gradient-to-r from-[#9cd0ec] via-[#fed356] to-[#ee6d31]">Identity Management</span> Solutions
           </h2>
           <p className="text-foreground-secondary font-poppins text-base md:text-lg max-w-2xl mx-auto mt-4">
-            IDS SmartTech makes it easy for organizations to secure access, protect people and assets, and improve operations with confidence.
+            ID SmartTech makes it easy for organizations to secure access, protect people and assets, and improve operations with confidence.
           </p>
         </motion.div>
 

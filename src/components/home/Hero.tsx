@@ -71,7 +71,7 @@ export const Hero = () => {
             className="lg:w-2/5"
           >
             <p className="text-white/80 text-base md:text-lg lg:text-xl leading-relaxed mb-8 max-w-lg">
-              IDS SmartTech delivers cutting-edge biometric systems, smart card solutions, RFID technology, and IoT automation to empower government and enterprises across India.
+              ID SmartTech delivers cutting-edge biometric systems, smart card solutions, RFID technology, and IoT automation to empower government and enterprises across India.
             </p>
             
             <a

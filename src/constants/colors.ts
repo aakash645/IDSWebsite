@@ -1,6 +1,6 @@
 /**
  * Application Colors
- * Brand colors derived from IDS SmartTech Logo
+ * Brand colors derived from ID SmartTech Logo
  * 
  * These values should match the CSS variables in globals.css
  * Use Tailwind classes (e.g., 'text-ids-blue', 'bg-primary') instead of these constants when possible

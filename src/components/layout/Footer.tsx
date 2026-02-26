@@ -61,7 +61,7 @@ export const Footer = () => {
           <div className="lg:col-span-4 space-y-8">
             <Logo className="scale-110 origin-left" />
             <p className="text-foreground-secondary text-sm leading-relaxed max-w-sm">
-              We engineer the systems that power modern enterprises. From biometric security to autonomous logistics and digital governance, IDS SmartTech is the partner for your digital transformation.
+              We engineer the systems that power modern enterprises. From biometric security to autonomous logistics and digital governance, ID SmartTech is the partner for your digital transformation.
             </p>
             {/* <div className="flex gap-4">
               {[Twitter, Linkedin, Facebook, Instagram].map((Icon, i) => (
@@ -153,12 +153,12 @@ export const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs text-foreground-muted">© {new Date().getFullYear()} IDS SmartTech. All rights reserved.</p>
-          <div className="flex gap-8 text-xs font-semibold text-foreground-muted">
+          <p className="text-xs text-foreground-muted">© {new Date().getFullYear()} IDS ID PVT LTD. All rights reserved.</p>
+          {/* <div className="flex gap-8 text-xs font-semibold text-foreground-muted">
             <Link href="#" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-foreground transition-colors">Cookie Settings</Link>
-          </div>
+          </div> */}
         </div>
         </div>
       </div>

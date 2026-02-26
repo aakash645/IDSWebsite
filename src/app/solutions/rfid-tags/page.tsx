@@ -371,7 +371,7 @@ export default function RfidTagsPage() {
                 <div className="w-12 h-1 bg-gradient-to-r from-green-500 to-ids-blue rounded-full"></div>
                 <span className="text-green-500 font-medium">Why Us</span>
               </motion.div>
-              <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-10">Why Choose IDS SmartTech</motion.h2>
+              <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-10">Why Choose ID SmartTech</motion.h2>
               
               <motion.div variants={staggerContainer} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {whyChooseUs.map((item, i) => (
