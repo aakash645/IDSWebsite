@@ -49,10 +49,11 @@ export default function HologramPrintingPage() {
               </p>
 
               <div className="flex justify-center gap-4">
-                <button className="px-8 py-3 bg-purple-500 hover:bg-purple-400 text-white font-bold rounded-full transition-all">
-                  <Link href='/products'/>
-                  View Products
-                </button>
+                <Link href='/products'>
+                  <button className="px-8 py-3 bg-purple-500 hover:bg-purple-400 text-white font-bold rounded-full transition-all">
+                    View Products
+                  </button>
+                </Link>
                 <Link href="/contact" className="px-8 py-3 bg-white/10 border border-white/20 hover:bg-white/20 text-white font-bold rounded-full transition-colors">
                   Get Samples
                 </Link>
@@ -89,6 +90,59 @@ export default function HologramPrintingPage() {
               </FadeIn>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-24 bg-[#0f172a]">
+        <div className="container mx-auto px-4">
+          <FadeIn>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold mb-4">Hologram Printing Videos</h2>
+              <p className="text-gray-400 max-w-2xl mx-auto">Watch our advanced hologram printing technology in action.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="flex flex-col items-center">
+                <h6 className="text-xl  mb-4 text-white">Working video for automatic laminator with loading system( 10 openings, max. sheet size: 600x750mm)</h6>
+                <video
+                  className="w-full h-64 rounded-3xl object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/videos/final1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="flex flex-col items-center">
+                <h6 className="text-xl mb-4 text-white">Working video for automatic punching for PC cards( CCD Camera Positioning System, 8 card collecting magazines)</h6>
+                <video
+                  className="w-full h-64 rounded-3xl object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/videos/final2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="flex flex-col items-center">
+                <h6 className="text-xl  mb-4 text-white">Working video for sheet collecting machine</h6>
+                <video
+                  className="w-full h-64 rounded-3xl object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/videos/final3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
     </div>
