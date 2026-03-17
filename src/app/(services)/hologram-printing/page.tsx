@@ -129,7 +129,7 @@ export default function HologramPrintingPage() {
                 </video>
               </div>
               <div className="flex flex-col items-center">
-                <h6 className="text-xl  mb-4 text-white">Working video for sheet collecting machine</h6>
+                <h6 className="text-xl  mb-4 text-white">Working video for paper sheet collecting machine,Automatic Counting Stacker</h6>
                 <video
                   className="w-full h-64 rounded-3xl object-cover"
                   autoPlay
