@@ -161,7 +161,7 @@ export const MENU_ITEMS: MenuItem[] = [
     icon: 'Box',
     megaMenu: [
       {
-        title: 'Smart Cards & Credentials',
+        title: 'Smart Card',
         items: [
           { label: 'SecureID Pro Smart Card', path: '/products/secureid-pro' },
           { label: 'MobileID Digital Wallet', path: '/products/mobileid-wallet' },
@@ -169,9 +169,12 @@ export const MENU_ITEMS: MenuItem[] = [
         ]
       },
       {
-        title: 'Access Control',
+        title: 'Access Control & Security Systems',
         items: [
-          { label: 'GateKeeper X1 Lock', path: '/products/gatekeeper-x1' },
+          { label: 'IDS GATE Access Control System', path: '/products/ids-gate' },
+          { label: 'Automatic Boom Barrier Gate', path: '/products/automatic-boom-barrier-gate' },
+          { label: 'Boom Barrier Gate System', path: '/products/boom-barrier-gate-system' },
+          { label: 'ANPR in IDS GATE', path: '/products/anpr-ids-gate' },
           { label: 'BioScan 500 Fingerprint', path: '/products/bioscan-500' },
           { label: 'FaceGate Pro Terminal', path: '/products/facegate-pro' },
         ]
@@ -193,7 +196,7 @@ export const MENU_ITEMS: MenuItem[] = [
         ]
       },
       {
-        title: 'RFID & Smart Card Systems',
+        title: 'Smart Card Systems',
         items: [
           { label: 'RFID Reader Pro Series', path: '/products/rfid-reader-pro' },
           { label: 'Smart Tag Suite', path: '/products/smart-tag-suite' },
