@@ -49,7 +49,7 @@ const chipTypes = [
 
 const applications = [
   { icon: Music, title: 'Concerts & Festivals', desc: 'Seamless crowd management for music events and large-scale festivals', image: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=600&auto=format&fit=crop' },
-  { icon: Trophy, title: 'Sports Events', desc: 'Stadium access control with VIP zone management and fan engagement', image: 'https://images.unsplash.com/photo-1461896836934- voices08cbc8?q=80&w=600&auto=format&fit=crop' },
+  { icon: Trophy, title: 'Sports Events', desc: 'Stadium access control with VIP zone management and fan engagement', image: 'https://boomset.com/wp-content/uploads/2025/07/largest-sporting-event-in-the-world.png' },
   { icon: Building2, title: 'Conferences & Expos', desc: 'Professional networking events with session tracking and lead capture', image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=600&auto=format&fit=crop' },
   { icon: GraduationCap, title: 'Educational Events', desc: 'Seminars, workshops, and graduation ceremonies with attendance tracking', image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=600&auto=format&fit=crop' },
 ];
@@ -421,13 +421,13 @@ export default function EventBadgesPage() {
             </motion.div>
 
             {/* Chip Types Section - Cards Style */}
-            <motion.div 
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              className="mb-16"
-            >
-              <motion.div variants={fadeInUp} className="flex items-center gap-3 mb-6">
+            {/* <motion.div 
+            //   initial="hidden"
+            //   whileInView="visible"
+            //   viewport={{ once: true, margin: "-100px" }}
+            //   className="mb-16"
+            // > */}
+              {/* <motion.div variants={fadeInUp} className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-1 bg-gradient-to-r from-ids-blue to-ids-orange rounded-full"></div>
                 <span className="text-ids-blue font-medium">Technology</span>
               </motion.div>
@@ -473,7 +473,7 @@ export default function EventBadgesPage() {
                 ))}
               </motion.div>
               <p className="text-gray-500 text-sm mt-6 text-center">Other chip types are also available upon request</p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Applications Section with Images */}
             <motion.div 

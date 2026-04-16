@@ -35,6 +35,7 @@ export const MENU_ITEMS: MenuItem[] = [
           { label: 'RFID Locker & Cabinet Access', path: '/solutions/rfid-lockers' },
           { label: 'Mobile & QR-Based Access', path: '/solutions/qr-access' },
           { label: 'Intrusion & Alert Monitoring', path: '/solutions/intrusion-monitoring' },
+          { label: 'IDS Event Ticketing', path: '/solutions/event-badges' },
         ]
       },
       {
@@ -45,7 +46,7 @@ export const MENU_ITEMS: MenuItem[] = [
           { label: 'Card Design & Personalization', path: '/solutions/card-design' },
           { label: 'Chip Encoding & Secure Writing', path: '/solutions/chip-encoding' },
           { label: 'Holographic Lamination & UV', path: '/solutions/holographic-lamination' },
-          { label: 'Event & Access Badges', path: '/solutions/event-badges' },
+          
         ]
       },
       {
